@@ -1,4 +1,5 @@
-﻿class Computer {
+﻿// Github Repo: https://github.com/aoof/csharp-computer-store
+class Computer {
     private string brand;
     private string model;
     private long SN;
@@ -18,6 +19,14 @@
         this.model = model;
         this.SN = SN;
         this.price = price;
+        count++;
+    }
+
+    public Computer(Computer computer) {
+        brand = computer.brand;
+        model = computer.model;
+        SN = computer.SN;
+        price = computer.price;
         count++;
     }
 
